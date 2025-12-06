@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Brindle Engineering Talent</title>
-    <link>https://brindle-engineeringtalent.github.io/</link>
+    <link>https://brindle-engineering.github.io/</link>
     <description>Recent content on Brindle Engineering Talent</description>
     <generator>Hugo -- 0.152.2</generator>
     <language>en-us</language>
-    <atom:link href="https://brindle-engineeringtalent.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://brindle-engineering.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://brindle-engineeringtalent.github.io/about/</link>
+      <link>https://brindle-engineering.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://brindle-engineeringtalent.github.io/about/</guid>
+      <guid>https://brindle-engineering.github.io/about/</guid>
       <description>&lt;h1 id=&#34;about-brindle-engineering-talent&#34;&gt;About Brindle Engineering Talent&lt;/h1&gt;
 &lt;p&gt;My name is &lt;strong&gt;Matthew Brindle&lt;/strong&gt;, an engineer based in Western Australia.&lt;/p&gt;
 &lt;p&gt;After experiencing the slow and inconsistent engineering recruitment process in WA, I started &lt;strong&gt;Brindle Engineering Talent&lt;/strong&gt; to offer a more technical, accurate and human approach.&lt;/p&gt;
@@ -27,9 +27,9 @@
     </item>
     <item>
       <title>Contact</title>
-      <link>https://brindle-engineeringtalent.github.io/contact/</link>
+      <link>https://brindle-engineering.github.io/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://brindle-engineeringtalent.github.io/contact/</guid>
+      <guid>https://brindle-engineering.github.io/contact/</guid>
       <description>&lt;h1 id=&#34;contact&#34;&gt;Contact&lt;/h1&gt;
 &lt;p&gt;For enquiries, referrals or CV submissions:&lt;/p&gt;
 &lt;p&gt;📧 &lt;strong&gt;&lt;a href=&#34;mailto:brindle.engineeringtalent@proton.me&#34;&gt;brindle.engineeringtalent@proton.me&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
@@ -38,9 +38,9 @@ Perth, Western Australia&lt;/p&gt;</description>
     </item>
     <item>
       <title>For Employers</title>
-      <link>https://brindle-engineeringtalent.github.io/employers/</link>
+      <link>https://brindle-engineering.github.io/employers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://brindle-engineeringtalent.github.io/employers/</guid>
+      <guid>https://brindle-engineering.github.io/employers/</guid>
       <description>&lt;h1 id=&#34;for-employers&#34;&gt;For Employers&lt;/h1&gt;
 &lt;p&gt;Brindle Engineering Talent is run by an engineer, not a generalist recruiter.&lt;/p&gt;
 &lt;p&gt;I help WA companies with:&lt;/p&gt;
@@ -56,9 +56,9 @@ Perth, Western Australia&lt;/p&gt;</description>
     </item>
     <item>
       <title>For Engineers</title>
-      <link>https://brindle-engineeringtalent.github.io/engineers/</link>
+      <link>https://brindle-engineering.github.io/engineers/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://brindle-engineeringtalent.github.io/engineers/</guid>
+      <guid>https://brindle-engineering.github.io/engineers/</guid>
       <description>&lt;h1 id=&#34;for-engineers&#34;&gt;For Engineers&lt;/h1&gt;
 &lt;p&gt;I know it’s tough to get traction in WA engineering, even when you’re capable.&lt;/p&gt;
 &lt;p&gt;I can help you with:&lt;/p&gt;
@@ -74,9 +74,9 @@ Perth, Western Australia&lt;/p&gt;</description>
     </item>
     <item>
       <title>Services</title>
-      <link>https://brindle-engineeringtalent.github.io/services/</link>
+      <link>https://brindle-engineering.github.io/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://brindle-engineeringtalent.github.io/services/</guid>
+      <guid>https://brindle-engineering.github.io/services/</guid>
       <description>&lt;h1 id=&#34;services&#34;&gt;Services&lt;/h1&gt;
 &lt;h2 id=&#34;for-engineers&#34;&gt;For Engineers&lt;/h2&gt;
 &lt;ul&gt;
