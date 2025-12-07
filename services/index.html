@@ -172,20 +172,69 @@ You get an engineer reading engineering CVs – not a generic recruiter.">
 </script>
 </head>
 <body id="top">
-    <header class="header">
+    
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+
+<noscript>
+    <style type="text/css">
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: #1d1e20;
+                --entry: #2e2e33;
+                --primary: rgba(255, 255, 255, 0.84);
+                --secondary: rgba(255, 255, 255, 0.56);
+                --tertiary: rgba(255, 255, 255, 0.16);
+                --content: rgba(255, 255, 255, 0.74);
+                --hljs-bg: #2e2e33;
+                --code-bg: #37383e;
+                --border: #333;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+    </style>
+</noscript>
+
+<header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://Brindle-Engineering.github.io/" accesskey="h" title="Brindle Engineering Talent (Alt + H)">Brindle Engineering Talent</a>
-            <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            <span class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z">
+                        </path>
                     </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -197,31 +246,51 @@ You get an engineer reading engineering CVs – not a generic recruiter.">
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </button>
-            </div>
+                <ul class="lang-switch"><li>|</li>
+                </ul>
+            </span>
         </div>
-        <ul id="menu">
+
+        
+        <button id="menu-trigger" aria-haspopup="menu" aria-label="Menu Button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentcolor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+
+        
+        <ul class="menu hidden">
             <li>
-                <a href="https://Brindle-Engineering.github.io/about/" title="About">
+                <a href="https://Brindle-Engineering.github.io/about/"
+                    title="About">
                     <span>About</span>
                 </a>
             </li>
             <li>
-                <a href="https://Brindle-Engineering.github.io/services/" title="Services">
+                <a href="https://Brindle-Engineering.github.io/services/"
+                    title="Services">
                     <span class="active">Services</span>
                 </a>
             </li>
             <li>
-                <a href="https://Brindle-Engineering.github.io/engineers/" title="For Engineers">
+                <a href="https://Brindle-Engineering.github.io/engineers/"
+                    title="For Engineers">
                     <span>For Engineers</span>
                 </a>
             </li>
             <li>
-                <a href="https://Brindle-Engineering.github.io/employers/" title="For Employers">
+                <a href="https://Brindle-Engineering.github.io/employers/"
+                    title="For Employers">
                     <span>For Employers</span>
                 </a>
             </li>
             <li>
-                <a href="https://Brindle-Engineering.github.io/contact/" title="Contact">
+                <a href="https://Brindle-Engineering.github.io/contact/"
+                    title="Contact">
                     <span>Contact</span>
                 </a>
             </li>
@@ -308,7 +377,8 @@ You get an engineer reading engineering CVs – not a generic recruiter.">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
         <path d="M12 6H0l6-6z" />
     </svg>
-</a>
+</a><script defer src="/menu-trigger.min.f8952214762921b4f64b73e2957b35e4d15f86bd8df6dba030b5f9d531681c67.js"></script>
+
 
 <script>
     let menu = document.getElementById('menu');
