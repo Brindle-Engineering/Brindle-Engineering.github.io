@@ -1,0 +1,1 @@
+(()=>{var t=document.querySelector("#menu-trigger"),e=document.querySelector(".menu");t&&e&&(t.addEventListener("click",t=>{t.stopPropagation(),e.classList.toggle("open")}),document.addEventListener("click",n=>{!e.contains(n.target)&&!t.contains(n.target)&&e.classList.remove("open")}))})()
